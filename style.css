@@ -1,0 +1,115 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0b0f1a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 { 
+  font-size: 2.4rem; 
+  color: #00d4ff; 
+}
+
+header p { 
+  color: #cfcfcf; 
+  margin-bottom: 20px; 
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+/* mood buttons */
+.mood-buttons button {
+  background: linear-gradient(90deg,#182033,#22314b);
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .18s, box-shadow .18s;
+}
+.mood-buttons button:hover { 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 18px rgba(0,212,255,.12); 
+}
+
+/* genre select */
+.genre-filter select {
+  background: #162033;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* Pesan tengah */
+.center-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 400px);
+  font-size: 1.2rem;
+  color: #8b98a8;
+}
+
+/* movie list */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  max-width: 1100px;
+  margin: 18px auto 60px;
+  padding: 0 6px;
+}
+
+.movie-card {
+  background: #141a2a;
+  border-radius: 12px;
+  padding: 8px;
+  transition: transform .18s, box-shadow .18s;
+  cursor: pointer;
+}
+
+.movie-card:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 10px 30px rgba(0,212,255,0.08); 
+}
+
+.movie-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-card h3 { 
+  color:#00d4ff; 
+  margin:8px 0 4px; 
+  font-size:1rem; 
+}
+
+.movie-card p { 
+  color:#cfcfcf; 
+  font-size:0.85rem; 
+}
+
+footer { 
+  color:#8b98a8; 
+  margin-top: 10px; 
+  font-size: .9rem; 
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MovieMood – Rekomendasi Film</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎬 MovieMood</h1>
+    <p>Pilih mood dan genre untuk melihat rekomendasi film</p>
+  </header>
+
+  <div class="controls">
+    <div class="mood-buttons">
+      <button data-mood="happy">😊 Happy</button>
+      <button data-mood="sad">😢 Sad</button>
+      <button data-mood="romantic">💖 Romantic</button>
+      <button data-mood="bored">😴 Bored</button>
+    </div>
+
+    <div class="genre-filter">
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="all">All</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Romance">Romance</option>
+        <option value="Animation">Animation</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Horror">Horror</option>
+      </select>
+    </div>
+  </div>
+
+  <main>
+    <section id="movie-list" class="movie-list" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ — MovieMood</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
